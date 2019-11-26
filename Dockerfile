@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install -y gcc make curl && \
 
     # build.
-    curl http://eddylab.org/software/hmmer/hmmer-3.3.tar.gz > /tmp/hmmer-3.tar.gz && \
+    curl http://eddylab.org/software/hmmer/hmmer-3.3.tar.gz > /tmp/hmmer-3.3.tar.gz && \
     cd /tmp && tar zxvf hmmer-3.3.tar.gz && \
     cd /tmp/hmmer-3.3 && \
     ./configure --prefix /opt && \
